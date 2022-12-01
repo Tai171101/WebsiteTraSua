@@ -3,18 +3,18 @@ $idtheloai = intval($_GET['theloai']);
 $phantrang = intval($_GET['phantrang']);
 
 $con = mysqli_connect('localhost','root','','webbanhang');
-if (!$con) {
-  die('Could not connect: ' . mysqli_error($con));
-}
+// if (!$con) {
+//   die('Could not connect: ' . mysqli_error($con));
+// }
 
-$sql="SELECT * FROM sanpham where tinhtrang='1'";
+$sql="SELECT * FROM sanpham where tinhtrang = '1'";
 $result = mysqli_query($con,$sql);
 
 while($row = mysqli_fetch_array($result)) {
   $new_array[] = $row;
 }
 $arraylength = count($new_array);
-for ($i=0; $i < $arraylength; $i++) { 
+for ($i=0; $i < $arraylength; $i++) {
 	# code...
 	if ($new_array[$i]['idloai']==$idtheloai) {
 		# code...
@@ -26,7 +26,7 @@ $sophantrang=(($arraytemplength/6)+1);
 $i=($phantrang-1)*6;
 $count=0;
 echo "<div class='row'>";
-for ($i; $i < $arraytemplength ; $i++) { 
+for ($i; $i < $arraytemplength ; $i++) {
 	# code...
 	echo "<div class='col-sm-6'>";
 	echo "<div class='wrap-product'>";
@@ -61,7 +61,7 @@ for ($i; $i < $arraytemplength ; $i++) {
 
 echo "</div>";
 echo "<div class='col-sm-12' id='phantrang'>";
-for ($j=1; $j <=$sophantrang ; $j++) { 
+for ($j=1; $j <=$sophantrang ; $j++) {
 	# code...
 	if ($j == $phantrang) {
 		# code...

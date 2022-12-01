@@ -7,14 +7,14 @@
         $row=mysqli_fetch_assoc($rs);
         if($row['idSP'] != NULL ) {
             echo '<script type="text/javascript">alert("Không thể xoá món ăn đã có đơn hàng!!!"); 
-                window.location.href = "http://localhost/LapTrinhWeb2/admin/admin.php?page-layout=danhsach-product";
+                window.location.href = "http://localhost/WebsiteTraSua/admin/admin.php?page-layout=danhsach-product";
             </script>';          
         }
         else{
         $sql_del = "DELETE FROM sanpham WHERE idsanpham= $id";
         $qry = mysqli_query($connect, $sql_del); 
         echo '<script type="text/javascript">alert("Đã xoá thành công món ăn!!!"); 
-                window.location.href = "http://localhost/LapTrinhWeb2/admin/admin.php?page-layout=danhsach-product";
+                window.location.href = "http://localhost/WebsiteTraSua/admin/admin.php?page-layout=danhsach-product";
             </script>'; 
         }
    }

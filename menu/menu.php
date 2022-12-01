@@ -25,7 +25,7 @@
 <body onload="showTheLoai(); showProduct(1,1);">
   <div id="background" class="view">
     <div class="d-flex flex-column">
-      <?php include("../home/nav-bar.php"); 
+      <?php include("../home/nav-bar.php");
       ?>
       <section class="d-flex flex-column of-menu">
        <div class="d-flex flex-column inside-menu">
@@ -36,9 +36,9 @@
         <div class="search">
           <form id="formid">
             <input id='search-txt' type="text"  name='search-txt' placeholder="Tìm kiếm....">
-            <div class="search-btn" name='search-btn' id='search-btn'> 
+            <div class="search-btn" name='search-btn' id='search-btn'>
               <i class="fas fa-search" aria-hidden="true">
-                          
+
               </i>
             </div>
             <div class="search-option">
@@ -59,7 +59,7 @@
         </div>
         <div class="cart-fixed">
           <a href="../order/order.php">Giỏ hàng</a>
-          <?php 
+          <?php
           if (isset($_SESSION['cart'])) {
             # code...
             $count = count($_SESSION['cart']);
@@ -76,18 +76,18 @@
               <div class="title-purple">Món ngon tại ViTasty</div>
               <div class="d-flex flex-column">
                 <ul class="list-unstyled" id="theloai">
-                  
+
                 </ul>
               </div>
             </div>
           </div>
           <div class="col-sm-8" id="product">
-            
+
           </div>
         </div>
        </div>
       </section>
-      
+
     </div>
   </div>
 </body>
@@ -165,8 +165,8 @@
           if (window.pageYOffset > sticky && window.pageYOffset < (sticky + 1600)) {
             menu.classList.add("sticky");
           } else {
-              menu.classList.remove("sticky"); 
-          } 
+              menu.classList.remove("sticky");
+          }
         }
   // Get the container element
   var btnContainer = document.getElementById("phantrang");
@@ -274,7 +274,7 @@
 */
     $('#formid').on('keyup', function(e) {
       var keyCode = e.keyCode || e.which;
-      if (keyCode === 13) { 
+      if (keyCode === 13) {
         e.preventDefault();
         return false;
       }
@@ -315,7 +315,7 @@
       }
     });
   }) ;
-  
+
 
   $(document).ready(function(){
     $('#logout').click(function(){
@@ -324,10 +324,10 @@
   });
 </script>
 <footer>
-	
+
 </footer>
 </html>
-<?php 
+<?php
   if (isset($_GET["error"])) {
     if ($_GET["error"] == 'notlogin') {
       # code...

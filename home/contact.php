@@ -11,7 +11,7 @@
               </a>
             </div>
             <div class="col-12 col-md padding-0 order-1">
-              <h3>CÔNG TY TRÁCH NHIỆM HỮU HẠN 4 THÀNH VIÊN</h3>
+              <h3>CÔNG TY TRÁCH NHIỆM HỮU HẠN 5 THÀNH VIÊN</h3>
               <span>*****</span>
               <p>
                 <span>Địa chỉ : </span>
@@ -30,29 +30,29 @@
               <h3>LIÊN HỆ</h3>
               <span>*****</span>
               <div class="row margin-0">
-                <div class="col-md-4 padding-0">
-                  <span id="social-span">Mạng xã hội : </span>
+                <div class="col-md-5 padding-0">
+                  <span id="social-span">Mạng xã hội:</span>
                 </div>
                 <div class="col-md-6 padding-0">
                   <ul class="list-inline social">
                     <li class="social-items">
                       <a href="https://facebook.com/">
                         <i class="fab fa-facebook-f" aria-hidden="true">
-                        
+
                         </i>
                       </a>
                     </li>
                     <li class="social-items">
                       <a href="https://youtube.com/">
                         <i class="fab fa-youtube" aria-hidden="true">
-                        
+
                         </i>
                       </a>
                     </li>
                     <li class="social-items">
                       <a href="https://twitter.com/">
                         <i class="fab fa-twitter" aria-hidden="true">
-                        
+
                         </i>
                       </a>
                     </li>
@@ -60,7 +60,7 @@
                 </div>
               </div>
               <div class="row margin-0">
-                <div class="col-md-4 padding-0">
+                <div class="col-md-5 padding-0">
                   <span id="social-span">Thành viên : </span>
                 </div>
               </div>
@@ -78,7 +78,7 @@
                   <p></p>
                 </div>
               </div>
-            </div> 
+            </div>
           </div>
         </div>
       </section>

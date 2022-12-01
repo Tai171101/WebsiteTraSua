@@ -28,28 +28,28 @@
 <body>
   <div id="background" class="view">
     <div class="d-flex flex-column">
-      <?php include_once("home/nav-bar.php"); 
-      ?>
-      
-      <?php include("home/welcome.php"); 
+      <?php include_once("home/nav-bar.php");
       ?>
 
-      <?php include("home/about.php"); 
-      ?>
-      
-      <?php include("home/gallery.php"); 
+      <?php include("home/welcome.php");
       ?>
 
-      <?php include("home/open.php"); 
+      <?php include("home/about.php");
       ?>
 
-      <?php include("home/contact.php"); 
+      <?php include("home/gallery.php");
+      ?>
+
+      <?php include("home/open.php");
+      ?>
+
+      <?php include("home/contact.php");
       ?>
     </div>
   </div>
 <script type="text/javascript" src="js/scriptofslider.js"></script>
 </body>
 <footer>
-	
+
 </footer>
 </html>
